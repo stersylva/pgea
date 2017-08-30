@@ -14,6 +14,7 @@
                 <td> {{$e->datatermino }} </td>
                 <td> {{$e->aprovada}} </td>
                 <td> <a href="/extensoes/mostra/{{$e->id}}"> <span class="glyphicon glyphicon-search"></span></a></td>
+                <td> <a href="/extensoes/remove/{{$e->id}}"> <span class="glyphicon glyphicon-trash"></span></a></td>
             </tr>
             @endforeach
         </table>

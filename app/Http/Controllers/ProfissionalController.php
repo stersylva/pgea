@@ -1,39 +1,37 @@
 <?php
 namespace pgea\Http\Controllers;
 
+use pgea\Profissional;
 use Request;
 use Illuminate\Support\Facades\DB;
 
 class ProfissionalController extends Controller {
     public function lista(){
-        $profissional = DB::select('select * from profissional');
+        $profissional = Profissional::all();
         return view('profissional.listagem_profissional')->with('profissional',$profissional);
     }
-    public function mostra(){
-        $id = Request::route('id');
-        $resposta = DB::select('select * from profissional where id = ?', [$id]);
+
+    public function mostra($id){
+        $resposta = Profissional::find($id);
         if(empty($resposta)){
             return "Esse profissional não existe";
         }
-        return view('profissional.detalhes_profissional')->with('p', $resposta[0]);
+        return view('profissional.detalhes_profissional')->with('p', $resposta);
     }
+
+    public function remove($id){
+        $profissional = Profissional::find($id);
+        $profissional->delete();
+        return redirect('/profissional');
+    }
+
     public function novo(){
         return view('profissional.formulario_profissional');
     }
+
+
     public function adiciona(){
-        //pegar as informações do formulario
-        $nome = Request::input('nome');
-        $cpf = Request::input('cpf');
-        $rg = Request::input('rg');
-        $codigo = Request::input('codigo');
-        $email = Request::input('email');
-        $sexo = Request::input('sexo');
-        $datanasci = Request::input('datanasci');
-
-        //adicionar no banco
-        DB::insert('insert into profissional (nome, cpf, rg, codigo, email, sexo, datanasci) VALUES (?, ?, ?, ?, ?, ?, ?)',
-            array($nome, $cpf, $rg, $codigo, $email, $sexo, $datanasci));
-
+        Profissional::create(Request::all());
         return redirect('/profissional')->withInput();
     }
 }

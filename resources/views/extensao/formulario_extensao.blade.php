@@ -14,7 +14,7 @@
         </div>
         <div class="form-group">
             <label>Curso</label>
-            <input name="curso" class="form-control">
+            <input name="cursoid" class="form-control">
         </div>
         <div class="form-group">
             <label>Data do Inicio</label>

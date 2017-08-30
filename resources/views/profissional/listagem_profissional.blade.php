@@ -8,6 +8,7 @@
             <tr>
                 <td> {{$p->nome }} </td>
                 <td> <a href="/profissional/mostra/{{$p->id}}"> <span class="glyphicon glyphicon-search"></span></a></td>
+                <td> <a href="/profissional/remove/{{$p->id}}"> <span class="glyphicon glyphicon-trash"></span></a></td>
             </tr>
         @endforeach
     </table>
