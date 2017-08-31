@@ -2,7 +2,9 @@
 namespace pgea\Http\Controllers;
 
 use pgea\Extensao;
+use pgea\Http\Requests\ExtensaoRequest;
 use Request;
+use Validator;
 use Illuminate\Support\Facades\DB;
 
 class ExtensaoController extends Controller {
@@ -34,10 +36,9 @@ class ExtensaoController extends Controller {
         }
 
 
-        public function adiciona(){
-            Extensao::create(Request::all());
+        public function adiciona(ExtensaoRequest $request){
+            Extensao::create($request->all());
             return redirect('/extensoes')->withInput();
-               // ->action('ExtensaoController@index')
-               // ->withInput(Request::only('titulo'));
+
         }
 }

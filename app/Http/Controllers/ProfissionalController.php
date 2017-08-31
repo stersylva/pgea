@@ -1,8 +1,10 @@
 <?php
 namespace pgea\Http\Controllers;
 
+use pgea\Http\Requests\ProfissionalRequest;
 use pgea\Profissional;
 use Request;
+use Validator;
 use Illuminate\Support\Facades\DB;
 
 class ProfissionalController extends Controller {
@@ -30,8 +32,8 @@ class ProfissionalController extends Controller {
     }
 
 
-    public function adiciona(){
-        Profissional::create(Request::all());
-        return redirect('/profissional')->withInput();
+    public function adiciona(ProfissionalRequest $request){
+        Profissional::create($request->all());
+        return redirect('/extensoes')->withInput();
     }
 }

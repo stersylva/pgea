@@ -1,6 +1,13 @@
 @extends('layout.principal')
 
 @section('conteudo')
+    <div class="alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
     <form action="/profissional/adiciona" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
@@ -26,7 +33,9 @@
         </div>
         <div class="form-group">
             <label>Sexo F ou M</label>
-            <input name="sexo" class="form-control">
+            <select name="sexo" class="form-control">
+                <option value="M">M</option>
+                <option value="F">F</option>
         </div>
         <div class="form-group">
             <label>Data de Nascimento</label>
