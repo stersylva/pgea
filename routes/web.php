@@ -14,9 +14,7 @@
 Route::get('/', function () {
     return '<h1>Bem vindo ao PGEA</h1>';
 });
-//login
-Route::get('/gestor', 'LoginController@form');
-Route::post('/gestor', 'LoginController@login');
+
 //extenssoes
 Route::get('/extensoes', 'ExtensaoController@lista');
 Route::get('/extensoes/mostra/{id}', 'ExtensaoController@mostra')->where('id', '[0-9]+');
@@ -35,4 +33,4 @@ Route::get('/profissional/remove/{id}', 'profissionalController@remove')->where(
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/gestor', 'GestorController@index')->name('gestor');

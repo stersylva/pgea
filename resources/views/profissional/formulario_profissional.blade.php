@@ -36,6 +36,7 @@
             <select name="sexo" class="form-control">
                 <option value="M">M</option>
                 <option value="F">F</option>
+            </select>
         </div>
         <div class="form-group">
             <label>Data de Nascimento</label>
