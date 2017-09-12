@@ -19,7 +19,9 @@ Route::get('/', function () {
 Route::get('/login', 'LoginController@form');
 Route::post('/login', 'LoginController@login');
 
-Route::get('/index', 'IndexController@mostra');
+Route::get('index', function (){
+    return view('layout/temp');
+});
 
 //extenssoes
 Route::get('/extensoes', 'ExtensaoController@lista');
