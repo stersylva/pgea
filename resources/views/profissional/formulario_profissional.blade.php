@@ -1,4 +1,4 @@
-@extends('layout.principal')
+@extends('layout.princ')
 
 @section('conteudo')
     <div class="alert-danger">

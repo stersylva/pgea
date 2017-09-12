@@ -9,10 +9,10 @@
                 <td> {{$e->id }}</td>
                 <td> {{$e->titulo }} </td>
                 <td> {{$e->edital }} </td>
-                <td> {{$e->cursoid }} </td>
                 <td> {{$e->datainicio }} </td>
                 <td> {{$e->datatermino }} </td>
-                <td> {{$e->aprovada}} </td>
+                <td> {{$e->curso->nome }} </td>
+
                 <td> <a href="/extensoes/mostra/{{$e->id}}"> <span class="glyphicon glyphicon-search"></span></a></td>
                 <td> <a href="/extensoes/remove/{{$e->id}}"> <span class="glyphicon glyphicon-trash"></span></a></td>
             </tr>

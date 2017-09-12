@@ -2,6 +2,7 @@
 namespace pgea\Http\Controllers;
 
 use pgea\Extensao;
+use pgea\Curso;
 use pgea\Http\Requests\ExtensaoRequest;
 use Request;
 use Validator;
@@ -9,7 +10,12 @@ use Illuminate\Support\Facades\DB;
 
 class ExtensaoController extends Controller {
 
-        public function lista(){
+        public function __construct()
+        {
+            $this->middleware('autorizador');
+        }
+
+    public function lista(){
             $extensao = Extensao::all(); //metodo all retorna todos os dados da tabela igual ao select * from extensao;
             return view('extensao.listagem_extensao')->with('extensao',$extensao);
         }
@@ -20,7 +26,7 @@ class ExtensaoController extends Controller {
                 if(empty($resposta)){
                     return "Essa extensão não existe";
                 }
-            return view('extensao.detalhes_extensao')->with('e', $resposta);
+            return view('extensao.detalhes_extensao')->withe('e', $resposta);
         }
 
 
@@ -32,7 +38,8 @@ class ExtensaoController extends Controller {
 
 
         public function nova(){
-            return view('extensao.formulario_extensao');
+            return view('extensao.formulario_extensao')->with('curso', Curso::all());
+
         }
 
 
