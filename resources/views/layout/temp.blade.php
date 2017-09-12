@@ -183,6 +183,7 @@
         </div>
         <!-- end search mobile button -->
 
+   
 
         <!-- fullscreen button -->
         <div id="fullscreen" class="btn-header transparent pull-right">
