@@ -176,7 +176,10 @@ return [
         // pgea\Providers\BroadcastServiceProvider::class,
         pgea\Providers\EventServiceProvider::class,
         pgea\Providers\RouteServiceProvider::class,
-
+        /**
+         * Html Provider
+         */
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -225,6 +228,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        /**
+         * Html Provider aliases
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

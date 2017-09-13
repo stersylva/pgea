@@ -69,8 +69,8 @@
             <div class="ajax-notifications custom-scroll">
 
                 <div class="alert alert-transparent">
-                    <h4>Click a button to show messages here</h4>
-                    This blank page message helps protect your privacy, or you can show the first message here automatically.
+                    <h4>Sair do sistema</h4>
+                    Você está preste a realizar lougout no sitema
                 </div>
 
                 <i class="fa fa-lock fa-4x fa-border"></i>
@@ -159,7 +159,7 @@
 
         <!-- logout button -->
         <div id="logout" class="btn-header transparent pull-right">
-            <span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+            <span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="Você está prestes a realizar logout no sistema"><i class="fa fa-sign-out"></i></a> </span>
         </div>
         <!-- end logout button -->
 
@@ -169,7 +169,7 @@
         </div>
         <!-- end search mobile button -->
 
-   
+
 
         <!-- fullscreen button -->
         <div id="fullscreen" class="btn-header transparent pull-right">
@@ -195,7 +195,7 @@
 					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
 						<img src="{{ asset('img/avatars/sunny.png')}}" alt="me" class="online" />
 						<span>
-							john.doe
+							Sair do sistema
 						</span>
 						<i class="fa fa-angle-down"></i>
 					</a>
@@ -425,13 +425,15 @@ you can add as many as you like
 <!--================================================== -->
 
 <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="{{ asset('js/plugin/pace/pace.min.js')}}"></script>
 
 <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+{!!Html::script('js/libs/jquery-2.1.1.min.js')!!}
+
 <script>
     if (!window.jQuery) {
-        document.write('<script src="{{ asset('js/libs/jquery-2.1.1.min.js')}}"><\/script>');
+        document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
     }
 </script>
 
@@ -442,55 +444,59 @@ you can add as many as you like
     }
 </script>
 
+
+
 <!-- IMPORTANT: APP CONFIG -->
-<script src="js/app.config.js"></script>
+<script src="{{ asset('js/app.config.js')}}"></script>
 
 <!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
-<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+<script src="{{ asset('js/plugin/jquery-touch/jquery.ui.touch-punch.min.js')}}"></script>
 
 <!-- BOOTSTRAP JS -->
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js')}}"></script>
 
 <!-- CUSTOM NOTIFICATION -->
-<script src="js/notification/SmartNotification.min.js"></script>
+<script src="{{ asset('js/SmartNotification.min.js')}}"></script>
 
 <!-- JARVIS WIDGETS -->
-<script src="js/smartwidgets/jarvis.widget.min.js"></script>
+{!!Html::script('js/smartwidgets/jarvis.widget.min.js')!!}
 
 <!-- EASY PIE CHARTS -->
-<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+{!!Html::script('js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js')!!}
 
 <!-- SPARKLINES -->
-<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+{!!Html::script('js/plugin/sparkline/jquery.sparkline.min.js')!!}
 
 <!-- JQUERY VALIDATE -->
-<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+{!!Html::script('js/plugin/jquery-validate/jquery.validate.min.js')!!}
 
 <!-- JQUERY MASKED INPUT -->
-<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+{!!Html::script('js/plugin/masked-input/jquery.maskedinput.min.js')!!}
 
 <!-- JQUERY SELECT2 INPUT -->
-<script src="/js/plugin/select2/select2.min.js"></script>
+{!!Html::script('js/plugin/select2/select2.min.js')!!}
 
 <!-- JQUERY UI + Bootstrap Slider -->
-<script src="/js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+{!!Html::script('/js/plugin/bootstrap-slider/bootstrap-slider.min.js')!!}
 
 <!-- browser msie issue fix -->
-<script src="/js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+{!!Html::script('js/plugin/msie-fix/jquery.mb.browser.min.js')!!}
 
 <!-- FastClick: For mobile devices -->
-<script src="js/plugin/fastclick/fastclick.min.js"></script>
+{!!Html::script('js/plugin/fastclick/fastclick.min.js')!!}
 
 <!-- Demo purpose only -->
-<script src="js/demo.min.js"></script>
+<script src="{{ asset('js/demo.min.js')}}"></script>
 
 <!-- MAIN APP JS FILE -->
-<script src="js/app.min.js"></script>
+<script src="{{ asset('js/app.min.js')}}"></script>
 
 
 <!-- SmartChat UI : plugin -->
-<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
-<script src="/js/smart-chat-ui/smart.chat.manager.min.js"></script>
+<script src="{{ asset('js/smart-chat-ui/smart.chat.ui.min.js')}}"></script>
+{!!Html::script('js/smart-chat-ui/smart.chat.ui.min.js')!!}
+{!!Html::script('js/smart-chat-ui/smart.chat.manager.min.js')!!}
+<script src="{{ asset('/js/smart-chat-ui/smart.chat.manager.min.js')}}"></script>
 
 <!-- PAGE RELATED PLUGIN(S) -->
 
