@@ -208,54 +208,28 @@
     <nav>
         <ul>
             <li class="active">
-                <a href="index.html" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
+                <a href="" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Tables</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-wrench"></i> <span class="menu-item-parent">Administração</span></a>
                 <ul>
                     <li>
-                        <a href="table.html">Normal Tables</a>
+                        <a href="/profissional"><i class="fa fa-lg fa-fw fa-user"></i>Profissionais</a>
                     </li>
                     <li>
-                        <a href="datatables.html">Data Tables <span class="badge inbox-badge bg-color-greenLight">v1.10</span></a>
+                        <a href=""><i class="fa fa-lg fa-fw fa-key"></i>Perfil de acesso</a>
                     </li>
-                    <li>
-                        <a href="jqgrid.html">Jquery Grid</a>
-                    </li>
+
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Forms</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Extensões</span></a>
                 <ul>
                     <li>
-                        <a href="form-elements.html">Smart Form Elements</a>
+                        <a href="/extensoes/nova"><i class="fa fa-lg fa-fw fa-plus"></i>Cadastro</a>
                     </li>
                     <li>
-                        <a href="form-templates.html">Smart Form Layouts</a>
-                    </li>
-                    <li>
-                        <a href="validation.html">Smart Form Validation</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-forms.html">Bootstrap Form Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-validator.html">Bootstrap Form Validation</a>
-                    </li>
-                    <li>
-                        <a href="plugins.html">Form Plugins</a>
-                    </li>
-                    <li>
-                        <a href="wizard.html">Wizards</a>
-                    </li>
-                    <li>
-                        <a href="other-editors.html">Bootstrap Editors</a>
-                    </li>
-                    <li>
-                        <a href="dropzone.html">Dropzone </a>
-                    </li>
-                    <li>
-                        <a href="image-editor.html">Image Cropping <span class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+                        <a href="/extensoes"><i class="fa fa-lg fa-fw fa-search"></i>Localizar</a>
                     </li>
                 </ul>
             </li>
