@@ -22,15 +22,15 @@
 
                 <div class="table-responsive">
                     <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="header">Titulo</th>
+                            <th class="header">Edital</th>
+                            <th class="header">Curso</th>
+                            <th style="width: 170px ">Ações</th>
+                        </tr>
+                        </thead>
                         @foreach ($extensao as $e)
-                            <thead>
-                            <tr>
-                                <th class="header">Titulo</th>
-                                <th class="header">Edital</th>
-                                <th class="header">Curso</th>
-                                <th class="header">Ações</th>
-                            </tr>
-                            </thead>
                             <tbody>
                             <tr>
                                 <td> {{$e->titulo }} </td>

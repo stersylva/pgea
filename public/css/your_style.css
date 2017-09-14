@@ -17,4 +17,23 @@
  * - BODY
  * - CUSTOM STYLES
  */
-body#login{ background: url(../img/gestao-ambiental.jpg) no-repeat; background-size: cover; }
+body#login{ background: url(../img/gestao-ambiental.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+nav>ul ul li::before {
+    border-top: none;
+}
+
+#extr-page #header {
+    border-bottom: 0 solid #eee!important;
+    background: #0182c1!important;
+}
+
+#logo-group span#activity {
+    background-color: #0182c1;
+    background-image: -webkit-linear-gradient(top, #0182c1, #0182c1);
+    color: #fff;
+    border: none;
+}

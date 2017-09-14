@@ -30,7 +30,7 @@
     <link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
     <link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
     <link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/your_style.css')}}">
 
 
 </head>
@@ -151,7 +151,7 @@
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+                        <a href="/login" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
                     </li>
                 </ul>
             </li>
@@ -159,7 +159,7 @@
 
         <!-- logout button -->
         <div id="logout" class="btn-header transparent pull-right">
-            <span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="Você está prestes a realizar logout no sistema"><i class="fa fa-sign-out"></i></a> </span>
+            <span> <a href="/login" title="Sign Out" data-action="userLogout" data-logout-msg="Você está prestes a realizar logout no sistema"><i class="fa fa-sign-out"></i></a> </span>
         </div>
         <!-- end logout button -->
 
@@ -193,9 +193,9 @@
 				<span> <!-- User image size is adjusted inside CSS, it should stay as it -->
 
 					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-						<img src="{{ asset('img/avatars/sunny.png')}}" alt="me" class="online" />
+						<img src="{{ asset('img/avatars/user.png')}}" alt="me" class="online" />
 						<span>
-							Sair do sistema
+							ADMIN
 						</span>
 						<i class="fa fa-angle-down"></i>
 					</a>

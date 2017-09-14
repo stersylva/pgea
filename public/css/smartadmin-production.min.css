@@ -11800,7 +11800,7 @@ nav ul li a {
     line-height: normal;
     font-size: 14px;
     padding: 10px 10px 10px 11px;
-    color: #c0bbb7;
+    color: #fff;
     display: block;
     font-weight: 400;
     text-decoration: none!important;
@@ -11887,7 +11887,7 @@ nav ul li li {
     position: relative
 }
 
-nav>ul>li>ul::before {
+/* nav>ul>li>ul::before {
     content: "";
     display: block;
     position: absolute;
@@ -11896,7 +11896,7 @@ nav>ul>li>ul::before {
     top: 0;
     bottom: 0;
     border-left: 1px solid #7A7A7A
-}
+} */
 
 nav>ul ul li::before {
     content: "";
@@ -11935,7 +11935,7 @@ nav>ul>li:hover>ul>li::before {
 nav ul ul {
     margin: 0;
     display: none;
-    background: rgba(69, 69, 69, .6);
+    background: rgba(69, 69, 69, .4);
     padding: 7px 0
 }
 
@@ -13093,7 +13093,7 @@ button {
 
 .login-info a {
     text-decoration: none!important;
-    color: #c0bbb7;
+    color: #fff;
     display: inline-block;
     margin-top: 6px
 }
@@ -13911,13 +13911,13 @@ img.away {
     -webkit-user-select: none;
     background-color: #f8f8f8;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
-    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-image: -webkit-linear-gradient(top, #0182c1, #0182c1);
     background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
     background-image: -ms-linear-gradient(top, #f8f8f8, #f1f1f1);
     background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
     background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
-    border: 1px solid #bfbfbf;
-    color: #6D6A69;
+    border: 0 solid ;
+    color: #fff0f0;
     font-size: 17px;
     margin: 10px 0 0
 }

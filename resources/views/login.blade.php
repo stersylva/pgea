@@ -25,6 +25,7 @@
     <link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
     <link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
     <link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/your_style.css')}}">
 
 </head>
 
@@ -115,7 +116,7 @@
 <script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
 
 <!-- BOOTSTRAP JS -->
-<script src="js/bootstrap/bootstrap.min.js"></script>
+{!!Html::script('js/bootstrap.min.js')!!}
 
 <!-- JQUERY VALIDATE -->
 <script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>

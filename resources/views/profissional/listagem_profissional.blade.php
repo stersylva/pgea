@@ -22,15 +22,15 @@
                 @endif
                 <div class="table-responsive">
                     <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Perfil de Acesso</th>
+                            <th style="width: 170px ">Ações</th>
+                        </tr>
+                        </thead>
                         @foreach ($profissional as $p)
-                            <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>E-mail</th>
-                                <th>Perfil de Acesso</th>
-                                <th>Ações</th>
-                            </tr>
-                            </thead>
                             <tbody>
                             <tr>
                                 <td>{{$p->nome }}</td>
