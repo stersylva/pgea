@@ -26,7 +26,7 @@ class ExtensaoController extends Controller {
                 if(empty($resposta)){
                     return "Essa extensão não existe";
                 }
-            return view('extensao.detalhes_extensao')->withe('e', $resposta);
+            return view('extensao.detalhes_extensao')->with('e', $resposta);
         }
 
 

@@ -34,6 +34,6 @@ class ProfissionalController extends Controller {
 
     public function adiciona(ProfissionalRequest $request){
         Profissional::create($request->all());
-        return redirect('/extensoes')->withInput();
+        return redirect('/profissional')->withInput();
     }
 }

@@ -37,4 +37,8 @@ Route::get('/profissional/novo', 'ProfissionalController@novo');
 Route::post('/profissional/adiciona', 'ProfissionalController@adiciona');
 Route::get('/profissional/remove/{id}', 'profissionalController@remove')->where('id', '[0-9]+');
 
+Route::get('teste', function (){
+    return view('teste');
+});
+
 

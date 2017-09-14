@@ -16,7 +16,7 @@ class LoginController extends Controller
     public function login(){
        $credenciais = Request::only('email', 'password');
         if(Auth::attempt($credenciais)){
-            return view('extensao.formulario_extensao');
+            return view('/layout/temp');
         }
         return 'usuario não existe';
     }

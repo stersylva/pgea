@@ -223,7 +223,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Extensões</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-globe"></i></i> <span class="menu-item-parent">Extensões</span></a>
                 <ul>
                     <li>
                         <a href="/extensoes/nova"><i class="fa fa-lg fa-fw fa-plus"></i>Cadastro</a>
