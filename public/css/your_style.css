@@ -17,7 +17,7 @@
  * - BODY
  * - CUSTOM STYLES
  */
-body#login{ background: url(../img/gestao-ambiental.jpg) no-repeat;
+body#login{ background: url(../img/login.jpg) no-repeat;
     background-size: cover;
     height: 100%;
 }
@@ -37,3 +37,10 @@ nav>ul ul li::before {
     color: #fff;
     border: none;
 }
+html {
+    background: none;
+    }
+
+#extr-page #main {
+     background:none;
+    }
