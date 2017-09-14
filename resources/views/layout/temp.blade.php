@@ -90,7 +90,7 @@
         <!-- END AJAX-DROPDOWN -->
     </div>
 
-    <!-- projects dropdown -->
+    <!-- projects dropdown
     <div class="project-context hidden-xs">
 
         <span class="label">Projects:</span>
@@ -233,91 +233,8 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> <span class="menu-item-parent">UI Elements</span></a>
-                <ul>
-                    <li>
-                        <a href="general-elements.html">General Elements</a>
-                    </li>
-                    <li>
-                        <a href="buttons.html">Buttons</a>
-                    </li>
-                    <li>
-                        <a href="#">Icons</a>
-                        <ul>
-                            <li>
-                                <a href="fa.html"><i class="fa fa-plane"></i> Font Awesome</a>
-                            </li>
-                            <li>
-                                <a href="glyph.html"><i class="glyphicon glyphicon-plane"></i> Glyph Icons</a>
-                            </li>
-                            <li>
-                                <a href="flags.html"><i class="fa fa-flag"></i> Flags</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="grid.html">Grid</a>
-                    </li>
-                    <li>
-                        <a href="treeview.html">Tree View</a>
-                    </li>
-                    <li>
-                        <a href="nestable-list.html">Nestable Lists</a>
-                    </li>
-                    <li>
-                        <a href="jqui.html">JQuery UI</a>
-                    </li>
-                    <li>
-                        <a href="typography.html">Typography</a>
-                    </li>
-                    <li>
-                        <a href="#">Six Level Menu</a>
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fa fa-fw fa-folder-open"></i> Item #2</a>
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa fa-fw fa-folder-open"></i> Sub #2.1 </a>
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-fw fa-file-text"></i> Item #2.1.1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-fw fa-plus"></i> Expand</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="fa fa-fw fa-file-text"></i> File</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fa fa-fw fa-trash-o"></i> Delete</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-fw fa-folder-open"></i> Item #3</a>
 
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa fa-fw fa-folder-open"></i> 3ed Level </a>
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-fw fa-file-text"></i> File</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-fw fa-file-text"></i> File</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+        </ul>
             </li>
         </ul>
     </nav>
@@ -334,13 +251,13 @@
     <!-- RIBBON -->
     <div id="ribbon">
 
-				<span class="ribbon-button-alignment">
-					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
-						<i class="fa fa-refresh"></i>
+        <!--<span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+                 <i class="fa fa-refresh"></i> -->
 					</span>
 				</span>
 
-        <!-- breadcrumb -->
+
         <ol class="breadcrumb">
             <li>Home</li><li>Dashboard</li>
         </ol>

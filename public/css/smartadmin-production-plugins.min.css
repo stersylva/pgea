@@ -4058,9 +4058,9 @@ body.nooverflow {
 }
 
 .jarviswidget-color-blueDark>header {
-    border-color: #45474b!important;
-    background: #4c4f53;
-    color: #fff
+    border-color: #C2C2C2!important;
+    background: #fff;
+    color: #4c4f53;
 }
 
 .jarviswidget-color-blueDark .nav-tabs li:not(.active) a,
