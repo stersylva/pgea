@@ -8,7 +8,7 @@ class Extensao extends Model
 {
     protected $table = "extensao";
 
-   // public $timestamps = false;
+    public $timestamps = false;
 
     protected $fillable =
         array('titulo', 'edital', 'datainicio', 'datatermino', 'curso_id');

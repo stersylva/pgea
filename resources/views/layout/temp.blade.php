@@ -18,8 +18,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/smartadmin-skins.min.css')}}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/smartadmin-rtl.min.css')}}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/demo.min.css')}}">
-    <link rel="shortcut icon" href="{{ asset('img/icon.jpg" type="image/x-icon')}}">
-    <link rel="icon" href="{{ asset('img/icon.jpg')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/f11.png" type="image/x-icon')}}">
+    <link rel="icon" href="{{ asset('img/f11.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700')}}">
     <link rel="apple-touch-icon" href="{{ asset('img/splash/sptouch-icon-iphone.png')}}">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/splash/touch-icon-ipad.png')}}">
@@ -42,7 +42,7 @@
     <div id="logo-group">
 
         <!-- PLACE YOUR LOGO HERE -->
-        <span id="logo"> <img src="/img/logo.jpg" alt="SmartAdmin"> </span>
+        <span id="logo"> <img src="/img/logo.png" alt="SmartAdmin"> </span>
         <!-- END LOGO PLACEHOLDER -->
 
         <!-- Note: The activity badge color changes when clicked and resets the number to 0

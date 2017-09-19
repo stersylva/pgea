@@ -1,4 +1,4 @@
-@extends('layout.principal')
+@extends('layout.temp')
 
 @section('conteudo')
     <h1>Detalhes da Extensão {{$e->titulo}}</h1>
