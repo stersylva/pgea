@@ -11,7 +11,7 @@ class Extensao extends Model
     public $timestamps = false;
 
     protected $fillable =
-        array('titulo', 'edital', 'datainicio', 'datatermino', 'curso_id');
+        array('titulo', 'edital', 'datainicio', 'datatermino', 'cursoid');
 
     public function curso(){
        return $this->belongsTo('pgea\Curso');

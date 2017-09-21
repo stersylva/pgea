@@ -35,7 +35,7 @@
                             <tr>
                                 <td> {{$e->titulo }} </td>
                                 <td> {{$e->edital }} </td>
-                                <td> {{$e->curso }}</td>
+                                <td> {{$e->nome }}</td>
                                 <td> <div class="btn-group">
                                         <a class="btn btn-xs btn-default" href="/extensoes/mostra/{{$e->id}}">
                                             <i class="fa fa-search"></i> Visualizar</a>

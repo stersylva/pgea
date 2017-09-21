@@ -9,6 +9,6 @@ class Curso extends Model
     protected $table = "curso";
 
     public function curso(){
-       return $this->hasMany('pgea\Extensao');
+        return $this->hasMany('pgea\estensao');
     }
 }

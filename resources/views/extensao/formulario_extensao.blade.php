@@ -27,11 +27,11 @@
             <input name="authenticity_token" type="hidden">
             <div class="form-group">
                 <label>Titulo</label>
-                <input name="titulo" class="form-control">
+                <input name="titulo" class="form-control" value="{{ old('titulo') }}">
             </div>
             <div class="form-group">
                 <label>Edital</label>
-                <input name="edital" class="form-control">
+                <input name="edital" class="form-control" value="{{ old('edital') }}">
             </div>
 
             <div class="form-group">
@@ -44,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label>Curso</label>
-                <select name="curso_id" class="form-control">
+                <select name="cursoid" class="form-control">
                     @foreach($curso as $c)
                         <option value="{{$c->id}}">{{$c->nome}}</option>
                     @endforeach
