@@ -6,9 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profissional extends Model
 {
-    protected $table = "profissional";
-    //public $timestamps = false;
+    protected $table = "profissionais";
 
     protected $fillable =
-        array('nome', 'cpf', 'rg', 'codigo', 'email', 'sexo', 'datanasci', 'tributacaoid');
+        array('nome', 'cpf', 'codigo', 'email', 'sexo', 'data_de_nacimento', 'titulacao_id');
+
+    public function titulacao(){
+        return $this->belongsTo('pgea\Curso');
+    }
+
 }

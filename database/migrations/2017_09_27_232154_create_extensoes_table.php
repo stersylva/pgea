@@ -6,11 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateExtensoesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('extensoes', function (Blueprint $table) {
@@ -30,11 +26,7 @@ class CreateExtensoesTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
         Schema::dropIfExists('extensoes');

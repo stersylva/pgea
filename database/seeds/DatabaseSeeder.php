@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call('CursoTableSeeder');
         $this->call('CategoriaTableSeeder');
+        $this->call('TitulacaoTableSeeder');
     }
 }
 
@@ -34,5 +35,14 @@ class CategoriaTableSeeder extends Seeder
         Categoria::create(['nome' => 'CURSO']);
         Categoria::create(['nome' => 'PALESTRA']);
         Categoria::create(['nome' => 'EDITAL']);
+    }
+}
+class TitulacaoTableSeeder extends Seeder
+{
+    public function run()
+    {
+        Categoria::create(['nome' => 'PROFESSOR']);
+        Categoria::create(['nome' => 'CORDENADOR']);
+        Categoria::create(['nome' => 'DIRETOR']);
     }
 }
