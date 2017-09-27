@@ -12,7 +12,15 @@ class CreateProfissionaisTable extends Migration
         Schema::create('profissionais', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->increments('id');
+            $table->char('cpf', 11)->unique();
+            $table->char('rg', 15)->unique();
+            $table->char('codigo', 10);
+            $table->string('email', 100)->unique();
+            $table->enum('sexo', ['F', 'M']);
+            $table->date('data_nascimento');
+
+            $table->unsignedInteger('titulacao_id');
+            $table->foreign('titulacao_id')->references('id')->on('titulacoes');
             $table->timestamps();
         });
     }
@@ -20,6 +28,6 @@ class CreateProfissionaisTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('profissionals');
+        Schema::dropIfExists('profissionais');
     }
 }
