@@ -26,6 +26,7 @@
         <fieldset>
             <input name="authenticity_token" type="hidden">
             <div class="form-group">
+
                 <label>Titulo</label>
                 <input name="titulo" class="form-control" value="{{ old('titulo') }}">
             </div>
@@ -36,20 +37,29 @@
 
             <div class="form-group">
                 <label>Data do Inicio</label>
-                <input name="datainicio" class="form-control">
+                <input name="data_inicio" class="form-control">
             </div>
             <div class="form-group">
                 <label>Data Final</label>
-                <input name="datatermino" class="form-control">
+                <input name="data_termino" class="form-control">
             </div>
             <div class="form-group">
                 <label>Curso</label>
-                <select name="cursoid" class="form-control">
+                <select name="curso_id" class="form-control">
                     @foreach($curso as $c)
                         <option value="{{$c->id}}">{{$c->nome}}</option>
                     @endforeach
                 </select>
             </div>
+            <div class="form-group">
+                <label>Categoria</label>
+                <select name="categoria_id" class="form-control">
+                    @foreach($categoria as $ca)
+                        <option value="{{$ca->id}}">{{$ca->nome}}</option>
+                    @endforeach
+                </select>
+            </div>
+
         </fieldset>
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">

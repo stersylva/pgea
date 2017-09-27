@@ -45,3 +45,7 @@ Route::get('teste', function (){
 
 
 
+
+//Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');

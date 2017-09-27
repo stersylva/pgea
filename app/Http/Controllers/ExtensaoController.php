@@ -3,6 +3,7 @@ namespace pgea\Http\Controllers;
 
 use pgea\Extensao;
 use pgea\Curso;
+use pgea\Categoria;
 use pgea\Http\Requests\ExtensaoRequest;
 use Request;
 use Validator;
@@ -38,7 +39,9 @@ class ExtensaoController extends Controller {
 
 
         public function nova(){
-            return view('extensao.formulario_extensao')->with('curso', Curso::all());
+            $curso = Curso::all();
+            $categoria = Categoria::all();
+            return view('extensao.formulario_extensao', compact('curso', 'categoria'));
 
         }
 
