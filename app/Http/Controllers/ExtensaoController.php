@@ -11,10 +11,10 @@ use Illuminate\Support\Facades\DB;
 
 class ExtensaoController extends Controller {
 
-        public function __construct()
-        {
-            $this->middleware('autorizador');
-        }
+       // public function __construct()
+      //  {
+          //  $this->middleware('autorizador');
+        //}
 
     public function lista(){
             $extensao = Extensao::all(); //metodo all retorna todos os dados da tabela igual ao select * from extensao;

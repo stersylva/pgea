@@ -56,6 +56,17 @@
                             <label>Data de Nascimento</label>
                             <input name="datanasci" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label>Titulação</label>
+                            <select name="titulacao_id" class="form-control">
+                                @foreach($titulacao as $t)
+                                    <option value="{{$t->id}}">{{$t->nome}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+
+
                     </fieldset>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">
