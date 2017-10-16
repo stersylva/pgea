@@ -6,7 +6,6 @@ use pgea\Profissional;
 use pgea\Titulacao;
 use pgea\Endereco;
 use Request;
-use Validator;
 use Illuminate\Support\Facades\DB;
 
 class ProfissionalController extends Controller {
@@ -38,7 +37,8 @@ class ProfissionalController extends Controller {
 
 
     public function adiciona(ProfissionalRequest $request){
-        Profissional::create($request->all());
+        $profissional = Profissional::create($request->all());
+        $profissional->save();
         return redirect('/profissional')->withInput();
     }
 }

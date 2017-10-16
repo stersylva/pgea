@@ -25,6 +25,12 @@ body#login{ background: url(../img/login.jpg) no-repeat;
 nav>ul ul li::before {
     border-top: none;
 }
+.requerido .label:before {
+    content: '* ';
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 #extr-page #header {
     border-bottom: 0 solid #eee!important;

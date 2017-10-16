@@ -5,7 +5,9 @@ namespace pgea;
 use Illuminate\Database\Eloquent\Model;
 
 class Endereco extends Model
+
 {
+
     protected $fillable =
         array('logradouro', 'numero', 'complemento', 'bairro', 'cidade', 'estado_id', 'telefone1', 'telefone2', 'cep');
 
