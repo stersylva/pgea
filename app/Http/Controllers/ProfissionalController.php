@@ -3,6 +3,8 @@ namespace pgea\Http\Controllers;
 
 use pgea\Http\Requests\ProfissionalRequest;
 use pgea\Profissional;
+use pgea\Titulacao;
+use pgea\Endereco;
 use Request;
 use Validator;
 use Illuminate\Support\Facades\DB;
@@ -18,7 +20,8 @@ class ProfissionalController extends Controller {
         if(empty($resposta)){
             return "Esse profissional não existe";
         }
-        return view('profissional.detalhes_profissional')->with('p', $resposta);
+        $endereco = Endereco::all();
+        return view('profissional.detalhes_profissional', compact('p','endereco'));
     }
 
     public function remove($id){
@@ -28,7 +31,9 @@ class ProfissionalController extends Controller {
     }
 
     public function novo(){
-        return view('profissional.formulario_profissional');
+        $titulacao = Titulacao::all();
+        $endereco = Endereco::all();
+        return view('profissional.formulario_profissional', compact('titulacao', 'endereco'));
     }
 
 

@@ -9,6 +9,6 @@ class Titulacao extends Model
     protected $table = "titulacoes";
 
     public function titulacoes(){
-        return $this->hasMany('pgea\extensao');
+        return $this->hasMany('pgea\profissional');
     }
 }

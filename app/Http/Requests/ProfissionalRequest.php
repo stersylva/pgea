@@ -18,6 +18,7 @@ class ProfissionalRequest extends FormRequest
             'nome' => 'required|min:3',
             'cpf' => 'required|max:11',
             'rg' => 'required|max:11',
+            'email' => 'required|max:50',
             'sexo' => 'required|in:M,F'
 
         ];

@@ -35,7 +35,7 @@
                             <tr>
                                 <td>{{$p->nome }}</td>
                                 <td>{{$p->email }}</td>
-                                <td></td>
+                                <td>{{$p->titulacao->nome or '' }}</td>
                                 <td> <div class="btn-group">
                                         <a class="btn btn-xs btn-default" href="/profissional/mostra/{{$p->id}}">
                                             <i class="fa fa-search"></i> Visualizar</a>

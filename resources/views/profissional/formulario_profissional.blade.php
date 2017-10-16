@@ -15,6 +15,7 @@
             <h2>Novo Profissional</h2>
 
         </header>
+
         <div>
             <div class="jarviswidget-editbox">
             </div>
@@ -31,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label>CPF</label>
-                            <input name="cpf" class="form-control">
+                            <input type="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
                         </div>
                         <div class="form-group">
                             <label>RG</label>
@@ -56,6 +57,49 @@
                             <label>Data de Nascimento</label>
                             <input name="datanasci" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label>Titulação</label>
+                            <select name="titulacao_id" class="form-control">
+                                @foreach($titulacao as $t)
+                                    <option value="{{$t->id}}">{{$t->nome}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Logradouro</label>
+                            <input name="logradouro" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Nº</label>
+                            <input name="numero" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Complemento</label>
+                            <input name="complemento" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Bairro</label>
+                            <input name="bairro" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Cidade</label>
+                            <input name="logradouro" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input name="telefone1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Celular</label>
+                            <input name="telefone2" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>CEP</label>
+                            <input name="cep" class="form-control">
+                        </div>
+
+
                     </fieldset>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">
