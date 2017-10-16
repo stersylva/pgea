@@ -1,6 +1,24 @@
 @extends('layout.temp')
 
 @section('conteudo')
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <!--<span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+                 <i class="fa fa-refresh"></i> -->
+        </span>
+        </span>
+
+
+        <ol class="breadcrumb">
+            <li>Pgea</li><li>Extensão</li>
+        </ol>
+        <!-- end breadcrumb -->
+
+
+    </div>
+    <!-- END RIBBON -->
     <div class="alert-danger">
         <ul>
             @foreach($errors->all() as $error)
@@ -23,48 +41,66 @@
     <form action="/extensoes/adiciona" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
-        <fieldset>
+        <fieldset class="smart-style-3">
             <input name="authenticity_token" type="hidden">
-            <div class="form-group">
 
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+            <div class="form-group">
                 <label>Titulo</label>
                 <input name="titulo" class="form-control" value="{{ old('titulo') }}">
             </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
             <div class="form-group">
                 <label>Edital</label>
                 <input name="edital" class="form-control" value="{{ old('edital') }}">
             </div>
-
+                </div>
+            <div class="col-xs-12 col-md-3">
             <div class="form-group">
                 <label>Data do Inicio</label>
-                <input name="data_inicio" class="form-control">
+                <input name="data_inicio" id="data" class="form-control" value="{{ old('data_inicio') }}">
             </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
             <div class="form-group">
                 <label>Data Final</label>
-                <input name="data_termino" class="form-control">
+                <input name="data_termino" id="data" class="form-control" value="{{ old('data_termino') }}">
             </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
             <div class="form-group">
                 <label>Curso</label>
                 <select name="curso_id" class="form-control">
+                    <option>Selecione um Curso</option>
                     @foreach($curso as $c)
                         <option value="{{$c->id}}">{{$c->nome}}</option>
                     @endforeach
                 </select>
             </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
             <div class="form-group">
                 <label>Categoria</label>
                 <select name="categoria_id" class="form-control">
+                    <option>Selecione uma Categoria</option>
                     @foreach($categoria as $ca)
                         <option value="{{$ca->id}}">{{$ca->nome}}</option>
                     @endforeach
                 </select>
             </div>
-
+            </div>
+            </div>
         </fieldset>
+        <fieldset class="smart-style-3">
+            <legend>Detalhes da Extensão</legend>
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">
                 <i class="fa fa-arrow-right"></i>
-                Proximo
+                Salvar
             </button>
         </div>
     </form>
@@ -73,7 +109,11 @@
     <!-- end widget content -->
 
     </div>
-    <!-- end widget div -->
 
     </div>
 @stop
+<script>
+    window.onload = function(){
+        $("#data").mask("9999 / 99 / 99")
+    };
+</script>
