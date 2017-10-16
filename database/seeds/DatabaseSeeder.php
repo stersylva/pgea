@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 use pgea\Curso;
 use pgea\Categoria;
+use pgea\Titulacao;
 
 
 class DatabaseSeeder extends Seeder
@@ -41,8 +42,8 @@ class TitulacaoTableSeeder extends Seeder
 {
     public function run()
     {
-        Categoria::create(['nome' => 'PROFESSOR']);
-        Categoria::create(['nome' => 'CORDENADOR']);
-        Categoria::create(['nome' => 'DIRETOR']);
+        Titulacao::create(['nome' => 'PROFESSOR']);
+        Titulacao::create(['nome' => 'COORDENADOR']);
+        Titulacao::create(['nome' => 'DIRETOR']);
     }
 }

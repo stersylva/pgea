@@ -278,15 +278,7 @@
 </div>
 <!-- END MAIN PANEL -->
 
-<!-- PAGE FOOTER -->
-<div class="page-footer">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <span class="txt-color-white">PGEA <span class="hidden-xs"> - Plataforma de Gerenciamento de Eventos Acadêmicos</span></span>
-        </div>
-    </div>
-</div>
-<!-- END PAGE FOOTER -->
+
 
 <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
 Note: These tiles are completely responsive,
