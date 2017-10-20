@@ -5,6 +5,7 @@ use pgea\Http\Requests\ProfissionalRequest;
 use pgea\Profissional;
 use pgea\Titulacao;
 use pgea\Endereco;
+use pgea\Estado;
 use Request;
 use Illuminate\Support\Facades\DB;
 
@@ -32,7 +33,8 @@ class ProfissionalController extends Controller {
     public function novo(){
         $titulacao = Titulacao::all();
         $endereco = Endereco::all();
-        return view('profissional.formulario_profissional', compact('titulacao', 'endereco'));
+        $estado = Estado::all();
+        return view('profissional.formulario_profissional', compact('titulacao', 'endereco', 'estado'));
     }
 
 

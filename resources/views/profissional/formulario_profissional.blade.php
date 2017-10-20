@@ -91,6 +91,7 @@
                                 <div class="form-group">
                                     <label>Titulação</label>
                                     <select name="titulacao_id" class="form-control">
+                                        <option>Selecione a Titulação</option>
                                         @foreach($titulacao as $t)
                                             <option value="{{$t->id}}">{{$t->nome}}</option>
                                         @endforeach
@@ -101,7 +102,7 @@
                     </fieldset>
 
                     <fieldset class="smart-style-3">
-                        <legend>Endereço</legend>
+                        <legend>Endereço Residencial</legend>
                         <div class="row">
                             <div class="col-xs-12 col-md-10">
                                 <div class="form-group">
@@ -136,37 +137,26 @@
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
                                     <label>Estado</label>
-                                    <select name="nome" class="form-control">
-                                        <option value="acre">ACRE</option>
-                                        <option value="ALAGOAS">ALAGOAS</option>
-                                        <option value="AMAPÁ">AMAPÁ</option>
-                                        <option value="AMAZONAS">AMAZONAS</option>
-                                        <option value="BAHIA">BAHIA</option>
-                                        <option value="CEARÁ">CEARÁ</option>
-                                        <option value="DISTRITO FEDERAL">DISTRITO FEDERAL</option>
-                                        <option value="ESPÍRITO SANTO">ESPÍRITO SANTO</option>
-                                        <option value="GOIÁS">GOIÁS</option>
-                                        <option value="MARANHÃO">MARANHÃO</option>
-                                        <option value="MATO GROSSO DO SUL">MATO GROSSO DO SUL</option>
-                                        <option value="MATO GROSSO">MATO GROSSO</option>
-                                        <option value="MINAS GERAIS">MINAS GERAIS</option>
-                                        <option value="PARANÁ">PARANÁ</option>
-                                        <option value="">M</option>
-                                        <option value="">F</option>
+                                        <select name="estado_id" class="form-control">
+                                            <option>Selecione o Estado</option>
+                                            @foreach($estado as $es)
+                                                <option value="{{$es->id}}">{{$es->nome}}</option>
+                                            @endforeach
+
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
                                     <label>Telefone</label>
-                                    <input name="telefone1" class="form-control" id="telefone"
+                                    <input name="telefone1" class="form-control telefone"
                                            value="{{ old('telefone1') }}">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
                                     <label>Celular</label>
-                                    <input name="telefone2" class="form-control" id="telefone"
+                                    <input name="telefone2" class="form-control telefone"
                                            value="{{ old('telefone2') }}">
                                 </div>
                             </div>
@@ -176,8 +166,40 @@
                                     <input name="cep" class="form-control" id="cep" value="{{ old('cep') }}">
                                 </div>
                             </div>
+                        </div>
+                    </fieldset>
 
+                    <fieldset class="smart-style-3">
+                        <legend>Acesso PGEA</legend>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label>Login</label>
+                                    <input name="login" class="form-control" value="{{ old('login') }}">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label>Senha</label>
+                                    <input name="senha" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label>Confirmar Senha</label>
+                                    <input name="conf_senha" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Perfil de Acesso</label>
+                                    <select name="nome" class="form-control">
+                                        <option>Selecione o Perfil de Acesso</option>
 
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">
@@ -197,8 +219,8 @@
 @stop
 <!-- funcão das mascaras -->
 <script>
-    window.onload = function(){
-        $("#telefone").mask("(99) 9999 - 9999");
+    window.onload = function () {
+        $(".telefone").mask("(99) 9999 - 9999");
         $("#cep").mask("99999 - 999");
         $("#cpf").mask("999.999.999-99");
         $("#data").mask("9999 / 99 / 99")
