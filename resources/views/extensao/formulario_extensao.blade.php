@@ -60,15 +60,15 @@
             </div>
                 </div>
             <div class="col-xs-12 col-md-3">
-            <div class="form-group">
+            <div class="form-group ">
                 <label>Data do Inicio</label>
-                <input name="data_inicio" id="data" class="form-control" value="{{ old('data_inicio') }}">
+                <input name="data_inicio"  class="form-control data" value="{{ old('data_inicio') }}">
             </div>
             </div>
             <div class="col-xs-12 col-md-3">
             <div class="form-group">
                 <label>Data Final</label>
-                <input name="data_termino" id="data" class="form-control" value="{{ old('data_termino') }}">
+                <input name="data_termino" class="form-control data" value="{{ old('data_termino') }}">
             </div>
             </div>
             <div class="col-xs-12 col-md-3">
@@ -114,6 +114,6 @@
 @stop
 <script>
     window.onload = function(){
-        $("#data").mask("9999 / 99 / 99")
+        $(".data").mask("9999 / 99 / 99")
     };
 </script>

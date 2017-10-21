@@ -22,7 +22,7 @@ class RelacionamentoProfissionalEndereco extends Migration
     {
         Schema::table('profissionais', function(Blueprint $table)
         {
-            $table->dropColumn('endereco_id'); //apaga o campo
+            $table->dropForeign(['endereco_id']); //apaga o campo
         });
     }
 }
