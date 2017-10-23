@@ -32,11 +32,12 @@ Route::post('/extensoes/adiciona', 'ExtensaoController@adiciona');
 Route::get('/extensoes/remove/{id}', 'ExtensaoController@remove')->where('id', '[0-9]+');
 
 //profissional
-Route::get('/profissional', 'ProfissionalController@lista');
-Route::get('/profissional/mostra/{id}', 'ProfissionalController@mostra')->where('id', '[0-9]+');
-Route::get('/profissional/novo', 'ProfissionalController@novo');
-Route::post('/profissional/adiciona', 'ProfissionalController@adiciona');
-Route::get('/profissional/remove/{id}', 'profissionalController@remove')->where('id', '[0-9]+');
+Route::get('/profissional', 'ProfissionalController@Index');
+Route::get('/profissional/show/{id}', 'ProfissionalController@show')->where('id', '[0-9]+');
+Route::get('/profissional/create', 'ProfissionalController@create');
+Route::post('/profissional/store', 'ProfissionalController@store');
+Route::patch('/profissinal/edit/{id}', 'ProfissionalController@edit')->where('id', '[0-9]+');
+Route::get('/profissional/destroy/{id}', 'profissionalController@destroy')->where('id', '[0-9]+');
 
 Route::get('teste', function (){
     return view('teste');

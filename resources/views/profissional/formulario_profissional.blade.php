@@ -43,7 +43,7 @@
             </div>
             <div class="widget-body">
 
-                <form action="/profissional/adiciona" method="post">
+                <form action="/profissional/store" method="post">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
 
                     <fieldset class="smart-style-3">
@@ -56,6 +56,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
@@ -84,7 +85,7 @@
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label>Data de Nascimento</label>
-                                    <input name="datanasci" class="form-control" id="data" value="{{ old('nome') }}">
+                                    <input name="data_nascimento" class="form-control" id="data" value="{{ old('data_nascimento') }}">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-3">

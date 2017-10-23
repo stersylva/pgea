@@ -24,7 +24,7 @@
             <span class="widget-icon"> <i class="fa fa-user"></i> </span>
             <h2>Profissionais</h2>
             <div class="widget-toolbar">
-                <a href="profissional/novo" class="btn btn-primary"><i class="fa fa-plus"></i> Profissional</a>
+                <a href="profissional/create" class="btn btn-primary"><i class="fa fa-plus"></i> Profissional</a>
             </div>
         </header>
         <div>
@@ -55,9 +55,11 @@
                                 <td>{{$p->email }}</td>
                                 <td>{{$p->titulacao->nome or '' }}</td>
                                 <td> <div class="btn-group">
-                                        <a class="btn btn-xs btn-default" href="/profissional/mostra/{{$p->id}}">
+                                        <a class="btn btn-xs btn-default" href="/profissional/show/{{$p->id}}">
                                             <i class="fa fa-search"></i> Visualizar</a>
-                                        <a class="excluir btn btn-xs btn-danger" href="/profissional/remove/{{$p->id}}">
+                                        <a class="btn btn-xs btn-default" href="/profissional/edit/{{$p->id}}">
+                                            <i class="fa fa-search"></i> Editar</a>
+                                        <a class="excluir btn btn-xs btn-danger" href="/profissional/destroy/{{$p->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>
                                     </div>
                                 </td>

@@ -19,10 +19,7 @@
             <b>E-mail </b> {{$p->email}}
         </li>
         <li>
-            <b>Sexo </b> {{$p->sexo}}
-        </li>
-        <li>
-            <b>Data de Nascimento</b> {{$p->datanasci}}
+            <b>Data de Nascimento</b> {{$p->data_nascimento}}
         </li>
     </ul>
 @stop
