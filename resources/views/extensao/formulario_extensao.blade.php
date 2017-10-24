@@ -103,6 +103,7 @@
                 Salvar
             </button>
         </div>
+        </fieldset>
     </form>
 
     </div>

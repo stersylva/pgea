@@ -57,7 +57,7 @@
                                 <td> <div class="btn-group">
                                         <a class="btn btn-xs btn-default" href="/profissional/show/{{$p->id}}">
                                             <i class="fa fa-search"></i> Visualizar</a>
-                                        <a class="btn btn-xs btn-default" href="/profissional/edit/{{$p->id}}">
+                                        <a class="btn btn-xs btn-default" href="/profissinal/edit/{{$p->id}}">
                                             <i class="fa fa-search"></i> Editar</a>
                                         <a class="excluir btn btn-xs btn-danger" href="/profissional/destroy/{{$p->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>

@@ -22,8 +22,7 @@ class ProfissionalRequest extends FormRequest
             'logradouro' => 'required|min:3',
             'numero' => 'required|max:5',
             'bairro' => 'required|min:3',
-            'cidade' => 'required|min:3',
-            'telefone' => 'required|max:11'
+            'cidade' => 'required|min:3'
 
         ];
     }

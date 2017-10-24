@@ -93,8 +93,10 @@ class ProfissionalController extends Controller
      */
     public function edit($id)
     {
-        $profissionais = Profissional::find($id);
-        return view('profissional.formulario_profissional', compact('profissionais'));
+        $profissionais = Profissional::find($id)->first();
+        $titulacao = Titulacao::find($id)->first();
+        $estado = Estado::find($id)->first();
+        return redirect('/profissinal/store', compact('profissionais', 'titulacao', 'estado'));
 
     }
 
@@ -114,8 +116,6 @@ class ProfissionalController extends Controller
         $endereco->bairro = $request->get('bairro');
         $endereco->cidade = $request->get('cidade');
         $endereco-> estado_id = $request->get('estado_id');
-
-        $endereco->save();
         $endereco_id = $endereco->id;
 
         $profissional = Profissional::find($id);
@@ -128,8 +128,6 @@ class ProfissionalController extends Controller
 
         $profissional-> titulacao_id = $request->get('titulacao_id');
         $profissional->endereco_id = $endereco_id;
-        $profissional->save();
-
         return redirect('profissional')->with('message', 'O Profissional foi adicionado com Sucesso!');
     }
 
