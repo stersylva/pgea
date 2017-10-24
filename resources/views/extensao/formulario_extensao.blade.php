@@ -124,14 +124,26 @@
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <div class="form-group">
-                            <label>Horário</label>
-                            <input name="horario" class="form-control" value="{{ old('horario') }}">
+                            <label>Período</label>
+                            <input name="periodo" class="form-control" value="{{ old('periodo') }}">
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <div class="form-group">
                             <label>Carga Horária</label>
-                            <input name="carga_horaria" class="form-control hora" value="{{ old('carga_horário') }}">
+                            <input name="carga_horaria" class="form-control" value="{{ old('carga_horário') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Curso Primário</label>
+                            <input name="curso1_id" class="form-control" value="{{ old('curso1_id') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Curso Secundário</label>
+                            <input name="curso2_id" class="form-control" value="{{ old('curso2_id') }}">
                         </div>
                     </div>
                 </div>
