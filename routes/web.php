@@ -36,7 +36,7 @@ Route::get('/profissional', 'ProfissionalController@Index');
 Route::get('/profissional/show/{id}', 'ProfissionalController@show')->where('id', '[0-9]+');
 Route::get('/profissional/create', 'ProfissionalController@create');
 Route::post('/profissional/store', 'ProfissionalController@store');
-Route::patch('/profissinal/edit/{id}', 'ProfissionalController@edit')->where('id', '[0-9]+');
+Route::get('/profissinal/edit/{id}', 'ProfissionalController@Edit')->where('id', '[0-9]+');
 Route::get('/profissional/destroy/{id}', 'profissionalController@destroy')->where('id', '[0-9]+');
 
 Route::get('teste', function (){
