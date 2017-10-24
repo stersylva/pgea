@@ -13,7 +13,7 @@
 
 
         <ol class="breadcrumb">
-            <li>Pgea</li>
+            <li>PGEA</li>
             <li>Administração</li>
             <li>Profissional</li>
         </ol>

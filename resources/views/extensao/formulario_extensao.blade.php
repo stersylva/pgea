@@ -12,7 +12,7 @@
 
 
         <ol class="breadcrumb">
-            <li>Pgea</li><li>Extensão</li>
+            <li>PGEA</li><li>Extensão</li>
         </ol>
         <!-- end breadcrumb -->
 
@@ -97,6 +97,45 @@
         </fieldset>
         <fieldset class="smart-style-3">
             <legend>Detalhes da Extensão</legend>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Resumo</label>
+                            <input name="resumo" class="form-control" value="{{ old('resumo') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Palavra Chave</label>
+                            <input name="palavra_chave" class="form-control" value="{{ old('palavra_chave') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Anexo</label>
+                            <input name="anexo" class="form-control" value="{{ old('anexo') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Vagas</label>
+                            <input name="vagas" class="form-control" value="{{ old('vagas') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Horário</label>
+                            <input name="horario" class="form-control" value="{{ old('horario') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Carga Horária</label>
+                            <input name="carga_horaria" class="form-control hora" value="{{ old('carga_horário') }}">
+                        </div>
+                    </div>
+                </div>
+
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">
                 <i class="fa fa-arrow-right"></i>
@@ -114,6 +153,7 @@
 @stop
 <script>
     window.onload = function(){
-        $(".data").mask("9999 / 99 / 99")
+        $(".data").mask("9999 / 99 / 99");
+        $(".hora").mask("99:99")
     };
 </script>

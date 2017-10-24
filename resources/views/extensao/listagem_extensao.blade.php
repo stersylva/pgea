@@ -12,7 +12,7 @@
 
 
         <ol class="breadcrumb">
-            <li>Pgea</li><li>Extensões</li>
+            <li>PGEA</li><li>Extensões</li>
         </ol>
         <!-- end breadcrumb -->
 
@@ -42,7 +42,7 @@
                     <table class="table table-bordered">
                         <thead>
                         <tr>
-                            <th class="header">Titulo</th>
+                            <th class="header">Título</th>
                             <th class="header">Edital</th>
                             <th class="header">Curso</th>
                             <th style="width: 170px ">Ações</th>
