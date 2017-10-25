@@ -137,13 +137,23 @@
                     <div class="col-xs-12 col-md-3">
                         <div class="form-group">
                             <label>Curso Primário</label>
-                            <input name="curso1_id" class="form-control" value="{{ old('curso1_id') }}">
+                            <select name="curso1_id" class="form-control">
+                                <option>Selecione um Curso</option>
+                                @foreach($curso as $c)
+                                    <option value="{{$c->id}}">{{$c->nome}}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <div class="form-group">
                             <label>Curso Secundário</label>
-                            <input name="curso2_id" class="form-control" value="{{ old('curso2_id') }}">
+                            <select name="curso2_id" class="form-control">
+                                <option>Selecione um Curso</option>
+                                @foreach($curso as $c)
+                                    <option value="{{$c->id}}">{{$c->nome}}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                 </div>
