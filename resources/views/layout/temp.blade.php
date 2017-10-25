@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
 
-    <title> PGEA </title>
+    <title> PGEA - Plataforma de Gerenciamento de Eventos Acadêmicos </title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -208,7 +208,7 @@
     <nav>
         <ul>
             <li class="active">
-                <a href="" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
+                <a href="/index" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-wrench"></i> <span class="menu-item-parent">Administração</span></a>

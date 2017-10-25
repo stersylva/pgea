@@ -20,11 +20,14 @@ Route::get('/', function () {
 Route::get('/login', 'LoginController@form');
 Route::post('/login', 'LoginController@login');
 
-Route::get('index', function (){
+Route::get('/index', function (){
     return view('dashboard');
 });
 
 Route::get('/perfil', function (){
+    return view('perfil/perfil_lista');
+});
+Route::get('/perfis/create', function (){
     return view('perfil/perfil_cadastro');
 });
 

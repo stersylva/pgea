@@ -31,7 +31,10 @@
             <div class="jarviswidget-editbox">
             </div>
             <div class="widget-body">
-                <p>Lugar das pesquisas</p>
+                <form class="form-inline" method="get" action="">
+                    <label>Nome: <input type="text" class="form-control" name="nome" value=""></label>
+                    <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
+                </form>
 
                 @if(old('nome'))
                     <div class="alert alert-success">
@@ -55,12 +58,13 @@
                                 <td>{{$p->email }}</td>
                                 <td>{{$p->titulacao->nome or '' }}</td>
                                 <td> <div class="btn-group">
-                                        <a class="btn btn-xs btn-default" href="/profissional/show/{{$p->id}}">
-                                            <i class="fa fa-search"></i> Visualizar</a>
-                                        <a class="btn btn-xs btn-default" href="/profissinal/edit/{{$p->id}}">
-                                            <i class="fa fa-search"></i> Editar</a>
+
+                                        <a class="btn btn-xs btn-success" href="/profissinal/show/{{$p->id}}">
+                                            <i class="fa fa-pencil"></i> Editar</a>
                                         <a class="excluir btn btn-xs btn-danger" href="/profissional/destroy/{{$p->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>
+                                    <!-- <a class="btn btn-xs btn-info" href="/profissional/show/{{$p->id}}">
+                                            <i class="fa fa-search"></i> Visualizar</a> -->
                                     </div>
                                 </td>
                             </tr>

@@ -22,23 +22,20 @@
 
     </div>
     <!-- END RIBBON -->
-    <div class="alert-danger">
-        <ul>
-            @foreach($errors->all() as $error)
-                <li>{{$error}}</li>
-            @endforeach
-        </ul>
-    </div>
+
     <div class="jarviswidget" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false">
-
         <header>
-
-            <span class="widget-icon"> <i class="fa fa-user"></i> </span>
             <h2>Novo Profissional</h2>
-
         </header>
 
         <div>
+            <div class="alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
             <div class="jarviswidget-editbox">
             </div>
             <div class="widget-body">
@@ -85,7 +82,8 @@
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label>Data de Nascimento</label>
-                                    <input name="data_nascimento" class="form-control" id="data" value="{{ old('data_nascimento') }}">
+                                    <input name="data_nascimento" class="form-control" id="data"
+                                           value="{{ old('data_nascimento') }}">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-3">
@@ -138,11 +136,11 @@
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
                                     <label>Estado</label>
-                                        <select name="estado_id" class="form-control">
-                                            <option>Selecione o Estado</option>
-                                            @foreach($estado as $es)
-                                                <option value="{{$es->id}}">{{$es->nome}}</option>
-                                            @endforeach
+                                    <select name="estado_id" class="form-control">
+                                        <option>Selecione o Estado</option>
+                                        @foreach($estado as $es)
+                                            <option value="{{$es->id}}">{{$es->nome}}</option>
+                                        @endforeach
 
                                     </select>
                                 </div>
