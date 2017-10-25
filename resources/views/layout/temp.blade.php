@@ -217,7 +217,7 @@
                         <a href="/profissional"><i class="fa fa-lg fa-fw fa-user"></i>Profissionais</a>
                     </li>
                     <li>
-                        <a href=""><i class="fa fa-lg fa-fw fa-key"></i>Perfil de acesso</a>
+                        <a href="/perfil"><i class="fa fa-lg fa-fw fa-key"></i>Perfil de acesso</a>
                     </li>
 
                 </ul>

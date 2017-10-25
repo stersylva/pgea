@@ -24,6 +24,11 @@ Route::get('index', function (){
     return view('layout/temp');
 });
 
+Route::get('/perfil', function (){
+    return view('perfil/perfil_cadastro');
+});
+
+
 //extenssoes
 Route::get('/extensoes', 'ExtensaoController@lista');
 Route::get('/extensoes/mostra/{id}', 'ExtensaoController@mostra')->where('id', '[0-9]+');
