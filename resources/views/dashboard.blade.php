@@ -18,7 +18,7 @@
         <div style="margin-top: 15px;" id="inicio-index">
             <div class="row tiles">
                 <div class="col-xs-12 col-sm-6 col-md-4 tile">
-                    <a style="background-color: #F44336;" href="/profissionais">
+                    <a style="background-color: #F44336;" href="/profissional">
                         <i class="fa fa-user main-icon"></i>
                         <h3>Profissionais</h3>
                         <span><i class="fa fa-clock-o"></i></span>

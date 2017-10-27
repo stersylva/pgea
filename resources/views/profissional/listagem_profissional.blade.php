@@ -12,7 +12,7 @@
 
 
         <ol class="breadcrumb">
-            <li>Pgea</li><li>Administração</li><li>Profissionais</li>
+            <li>PGEA</li><li>Administração</li><li>Profissionais</li>
         </ol>
         <!-- end breadcrumb -->
 
@@ -35,6 +35,7 @@
                     <label>Nome: <input type="text" class="form-control" name="nome" value=""></label>
                     <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
                 </form>
+                <br>
 
                 @if(old('nome'))
                     <div class="alert alert-success">

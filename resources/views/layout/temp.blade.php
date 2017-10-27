@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
 
-    <title> PGEA - Plataforma de Gerenciamento de Eventos Acadêmicos </title>
+    <title> PGEA - Plataforma de Gestão de Eventos Acadêmicos </title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -210,18 +210,33 @@
             <li class="active">
                 <a href="/index" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
             </li>
+
+
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-wrench"></i> <span class="menu-item-parent">Administração</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-user"></i></i> <span class="menu-item-parent">Profissionais</span></a>
                 <ul>
                     <li>
-                        <a href="/profissional"><i class="fa fa-lg fa-fw fa-user"></i>Profissionais</a>
+                        <a href="/profissional/create"><i class="fa fa-lg fa-fw fa-plus"></i>Cadastro</a>
                     </li>
                     <li>
-                        <a href="/perfil"><i class="fa fa-lg fa-fw fa-key"></i>Perfil de acesso</a>
+                        <a href="/profissional"><i class="fa fa-lg fa-fw fa-search"></i>Localizar</a>
                     </li>
-
                 </ul>
             </li>
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-key"></i></i> <span class="menu-item-parent">Perfil de acesso</span></a>
+                <ul>
+                    <li>
+                        <a href="/perfis/create"><i class="fa fa-lg fa-fw fa-plus"></i>Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="/perfil"><i class="fa fa-lg fa-fw fa-search"></i>Localizar</a>
+                    </li>
+                </ul>
+            </li>
+
+
+
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-globe"></i></i> <span class="menu-item-parent">Extensões</span></a>
                 <ul>
