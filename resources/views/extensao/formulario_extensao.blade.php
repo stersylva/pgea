@@ -78,7 +78,7 @@
                 </select>
             </div>
             </div>
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-6">
             <div class="form-group">
                 <label>Categoria</label>
                 <select name="categoria_id" class="form-control">
@@ -97,7 +97,7 @@
                     <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             <label>Resumo</label>
-                            <input name="resumo" class="form-control" value="{{ old('resumo') }}">
+                            <textarea name="resumo" class="form-control text" value="{{ old('resumo') }}"></textarea>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12">

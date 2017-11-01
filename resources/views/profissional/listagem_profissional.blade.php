@@ -60,7 +60,7 @@
                                 <td>{{$p->titulacao->nome or '' }}</td>
                                 <td> <div class="btn-group">
 
-                                        <a class="btn btn-xs btn-success" href="/profissinal/show/{{$p->id}}">
+                                        <a class="btn btn-xs btn-success" href="/profissional/show/{{$p->id}}">
                                             <i class="fa fa-pencil"></i> Editar</a>
                                         <a class="excluir btn btn-xs btn-danger" href="/profissional/destroy/{{$p->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>

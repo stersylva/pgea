@@ -61,8 +61,8 @@
                                 <td> {{$e->edital }} </td>
                                 <td> {{$e->curso->nome or '' }}</td>
                                 <td> <div class="btn-group">
-                                        <a class="btn btn-xs btn-default" href="/extensoes/mostra/{{$e->id}}">
-                                            <i class="fa fa-search"></i> Visualizar</a>
+                                        <a class="btn btn-xs btn-success" href="/extensoes/mostra/{{$e->id}}">
+                                            <i class="fa fa-pencil"></i> Editar</a>
                                         <a class="excluir btn btn-xs btn-danger" href="/extensoes/remove/{{$e->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>
                                     </div>

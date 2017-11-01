@@ -32,7 +32,7 @@ Route::get('/perfis/create', function (){
 });
 
 
-//extenssoes
+//extensoes
 Route::get('/extensoes', 'ExtensaoController@lista');
 Route::get('/extensoes/mostra/{id}', 'ExtensaoController@mostra')->where('id', '[0-9]+');
 Route::get('/extensoes/nova', 'ExtensaoController@nova');
@@ -44,8 +44,16 @@ Route::get('/profissional', 'ProfissionalController@Index');
 Route::get('/profissional/show/{id}', 'ProfissionalController@show')->where('id', '[0-9]+');
 Route::get('/profissional/create', 'ProfissionalController@create');
 Route::post('/profissional/store', 'ProfissionalController@store');
-Route::get('/profissinal/edit/{id}', 'ProfissionalController@Edit')->where('id', '[0-9]+');
+Route::get('/profissional/edit/{id}', 'ProfissionalController@Edit')->where('id', '[0-9]+');
 Route::get('/profissional/destroy/{id}', 'profissionalController@destroy')->where('id', '[0-9]+');
+
+//curso
+Route::get('/curso', 'CursoController@Index');
+Route::get('/curso/show/{id}', 'CursoController@show')->where('id', '[0-9]+');
+Route::get('/curso/create', 'CursoController@create');
+Route::post('/curso/store', 'CursoController@store');
+Route::get('/cursol/edit/{id}', 'CursoController@Edit')->where('id', '[0-9]+');
+Route::get('/curso/destroy/{id}', 'CursoController@destroy')->where('id', '[0-9]+');
 
 Route::get('teste', function (){
     return view('teste');

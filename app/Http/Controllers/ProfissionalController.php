@@ -96,7 +96,7 @@ class ProfissionalController extends Controller
         $profissionais = Profissional::find($id)->first();
         $titulacao = Titulacao::find($id)->first();
         $estado = Estado::find($id)->first();
-        return redirect('/profissinal/store', compact('profissionais', 'titulacao', 'estado'));
+        return redirect('/profissional/store', compact('profissionais', 'titulacao', 'estado'));
 
     }
 
