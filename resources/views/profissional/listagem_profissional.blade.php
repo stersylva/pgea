@@ -12,7 +12,7 @@
 
 
         <ol class="breadcrumb">
-            <li>Pgea</li><li>Administração</li><li>Profissionais</li>
+            <li>PGEA</li><li>Administração</li><li>Profissionais</li>
         </ol>
         <!-- end breadcrumb -->
 
@@ -35,6 +35,7 @@
                     <label>Nome: <input type="text" class="form-control" name="nome" value=""></label>
                     <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
                 </form>
+                <br>
 
                 @if(old('nome'))
                     <div class="alert alert-success">
@@ -59,7 +60,7 @@
                                 <td>{{$p->titulacao->nome or '' }}</td>
                                 <td> <div class="btn-group">
 
-                                        <a class="btn btn-xs btn-success" href="/profissinal/show/{{$p->id}}">
+                                        <a class="btn btn-xs btn-success" href="/profissional/show/{{$p->id}}">
                                             <i class="fa fa-pencil"></i> Editar</a>
                                         <a class="excluir btn btn-xs btn-danger" href="/profissional/destroy/{{$p->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>

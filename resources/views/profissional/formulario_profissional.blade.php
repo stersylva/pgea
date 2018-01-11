@@ -49,7 +49,7 @@
                             <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label>Nome</label>
-                                    <input name="nome" class="form-control" value="{{ old('nome') }}">
+                                    <input name="nome" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label>Codigo</label>
+                                    <label>Código</label>
                                     <input name="codigo" class="form-control" value="{{ old('codigo') }}">
                                 </div>
                             </div>

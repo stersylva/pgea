@@ -25,7 +25,7 @@
     <div class="jarviswidget" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false">
 
         <header>
-            <span class="widget-icon"> <i class="fa fa-globe"></i> </span>
+            <span class="widget-icon"> <i class=""></i> </span>
             <h2>Nova Extensão</h2>
 
         </header>
@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-12">
             <div class="form-group">
-                <label>Titulo</label>
+                <label>Título</label>
                 <input name="titulo" class="form-control" value="{{ old('titulo') }}">
             </div>
                 </div>
@@ -57,7 +57,7 @@
                 </div>
             <div class="col-xs-12 col-md-3">
             <div class="form-group ">
-                <label>Data do Inicio</label>
+                <label>Data do Início</label>
                 <input name="data_inicio"  class="form-control data" value="{{ old('data_inicio') }}">
             </div>
             </div>
@@ -78,7 +78,7 @@
                 </select>
             </div>
             </div>
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-6">
             <div class="form-group">
                 <label>Categoria</label>
                 <select name="categoria_id" class="form-control">
@@ -97,7 +97,7 @@
                     <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             <label>Resumo</label>
-                            <input name="resumo" class="form-control" value="{{ old('resumo') }}">
+                            <textarea name="resumo" class="form-control text" value="{{ old('resumo') }}"></textarea>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12">
@@ -127,7 +127,7 @@
                     <div class="col-xs-12 col-md-3">
                         <div class="form-group">
                             <label>Carga Horária</label>
-                            <input name="carga_horaria" class="form-control" value="{{ old('carga_horário') }}">
+                            <input name="carga_horaria" class="form-control hora" value="{{ old('carga_horário') }}">
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-3">

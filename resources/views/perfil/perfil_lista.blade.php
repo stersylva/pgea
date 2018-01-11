@@ -25,9 +25,9 @@
             <div class="widget-body">
                 <form class="form-inline" method="get" action="">
                     <label>Nome: <input type="text" class="form-control" name="nome" value=""></label>
-                    <button class="btn btn-default" type="submit"><i class="icon-filter"></i> Filtrar</button>
+                    <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
                 </form>
-
+                <br>
                 @if(old('titulo'))
                     <div class="alert alert-success">
                         <strong>Sucesso!</strong> O Perfil  {{old('titulo')}} foi adicionado.
