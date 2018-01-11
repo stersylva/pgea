@@ -219,6 +219,9 @@
                     <li>
                         <a href="/perfil"><i class="fa fa-lg fa-fw fa-key"></i>Perfil de acesso</a>
                     </li>
+                    <li>
+                        <a href="/curso"><i class="fa fa-lg fa-fw fa-book"></i>Cursos</a>
+                    </li>
 
                 </ul>
             </li>
