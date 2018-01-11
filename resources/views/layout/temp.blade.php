@@ -232,18 +232,19 @@
                     <li>
                         <a href="/perfil"><i class="fa fa-lg fa-fw fa-search"></i>Localizar</a>
                     </li>
-<<<<<<< HEAD
-                    <li>
-                        <a href="/curso"><i class="fa fa-lg fa-fw fa-book"></i>Cursos</a>
-                    </li>
 
-=======
->>>>>>> master
                 </ul>
             </li>
-
-
-
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-book"></i></i> <span class="menu-item-parent">Curso</span></a>
+                <ul>
+                    <li>
+                        <a href="/curso/create"><i class="fa fa-lg fa-fw fa-plus"></i>Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="/curso"><i class="fa fa-lg fa-fw fa-search"></i>Localizar</a>
+                    </li>
+                </ul>
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-globe"></i></i> <span class="menu-item-parent">Extensões</span></a>
                 <ul>
