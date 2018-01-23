@@ -55,7 +55,7 @@
                                 <td>{{$c->nome }}</td>
                                 <td> <div class="btn-group">
 
-                                        <a class="btn btn-xs btn-success" href="/curso/edit/{{$c->id}}">
+                                        <a class="btn btn-xs btn-success" href="/curso/update/{{$c->id}}">
                                             <i class="fa fa-pencil"></i> Editar</a>
                                         <a class="excluir btn btn-xs btn-danger" href="/curso/destroy/{{$c->id}}">
                                             <i class="fa fa-trash-o"></i> Excluir</a>

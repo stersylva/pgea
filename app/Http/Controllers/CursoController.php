@@ -88,12 +88,17 @@ class CursoController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $curso = Curso::find($id);
 
-        $curso->nome = $request->input('nome');
-        $curso->save();
-        return redirect ('curso')->with('message', 'O curso foi alterado com sucesso!');
+        if ($_POST) {
 
+            $curso->nome = $request->get('nome');
+            $curso->save();
+            return redirect('curso')->with('message', 'O curso foi alterado com sucesso!');
+        }else{
+            return view('curso.Curso_edit' , array('curso' => $curso));
+        }
 
     }
 

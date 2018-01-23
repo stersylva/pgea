@@ -48,7 +48,9 @@ Route::get('/profissional/edit/{id}', 'ProfissionalController@Edit')->where('id'
 Route::get('/profissional/destroy/{id}', 'profissionalController@destroy')->where('id', '[0-9]+');
 
 Route::get('/curso/destroy/{id}', 'CursoController@destroy')->where('id', '[0-9]+');
-Route::get('/curso/edit/{id}', 'CursoController@Edit')->where('id', '[0-9]+');
+//Route::get('/curso/edit/{id}', 'CursoController@Edit')->where('id', '[0-9]+');
+Route::get('/curso/update/{id}', 'CursoController@Update')->where('id', '[0-9]+');
+Route::put('/curso/update/{id}', 'CursoController@Update')->where('id', '[0-9]+');
 Route::resource('curso', 'CursoController');
 Route::get('/curso/show/{id}', 'CursoController@show')->where('id', '[0-9]+');
 Route::post('/curso/store', 'CursoController@store');

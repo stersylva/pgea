@@ -32,6 +32,11 @@
     <link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/your_style.css')}}">
 
+    <script src="/js/libs/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="/js/libs/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+    <script src="/js/plugin/jquery-validate/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+
 
 </head>
 
@@ -337,6 +342,7 @@ you can add as many as you like
 
 <!-- IMPORTANT: APP CONFIG -->
 <script src="{{ asset('js/app.config.js')}}"></script>
+<script src="{{ asset('js/app.js/app.min.js')}}"></script>
 
 <!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
 <script src="{{ asset('js/plugin/jquery-touch/jquery.ui.touch-punch.min.js')}}"></script>
@@ -395,6 +401,8 @@ you can add as many as you like
 <script src="/js/plugin/flot/jquery.flot.time.min.js"></script>
 <script src="/js/plugin/flot/jquery.flot.tooltip.min.js"></script>
 <script src="/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+
 
 
 </body>
